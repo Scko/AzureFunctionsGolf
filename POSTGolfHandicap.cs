@@ -99,7 +99,7 @@ public static int CalculateHandicap(List<int> scores)
     if(scores.Count >= RemoveHighAndLowThreshold)
     {
         scores.Sort();
-        scores.Remove(scores.Count);
+        scores.Remove(scores.Count - 1);
         scores.Remove(0);
     }
 
